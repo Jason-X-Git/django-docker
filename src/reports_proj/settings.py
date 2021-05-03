@@ -88,7 +88,7 @@ DATABASES = {
         'NAME': 'sales',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        # 'HOST': 'localhost',
+        # 'HOST': 'LOCALHOST',
         'HOST': 'host.docker.internal',
         'PORT': '5432',
     }
