@@ -19,3 +19,6 @@ RUN adduser -D user
 RUN  chown -R user:user /vol/
 RUN  chmod -R 755 /vol/web
 USER user
+
+# run gunicorn
+CMD ["gunicorn", "--bind", ":8000", "--workers", "3", "reports_proj.wsgi:application"]
