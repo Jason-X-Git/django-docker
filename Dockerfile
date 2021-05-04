@@ -21,4 +21,4 @@ RUN  chmod -R 755 /vol/web
 USER user
 
 # run gunicorn
-CMD ["gunicorn", "--bind", ":8000", "--workers", "3", "reports_proj.wsgi:application"]
+CMD ["gunicorn", "--bind", ":8001", "--workers", "3", "reports_proj.wsgi:application"]
